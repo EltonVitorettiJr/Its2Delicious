@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: #ebd8ad;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+}
+
+button {
+    background-color: #b44307;
+    color: #ebd8ad;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+button:active {
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+header {
+    display: flex;
+    padding: 20px 0 0 60px;
+    width: 800px;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    height: 880px;
+}
+
+ul {
+    list-style: none;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 2;
+}
+
+.burger-img {
+    position: absolute;
+    bottom: 170px;
+    left: 170px;
+}
+
+.background-burger-img {
+    opacity: 0.15;
+    position: absolute;
+    height: 850px;
+    bottom: 10px;
+}
+
+.burger-container {
+    width: 50%;
+    height: 100%;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 100px;
+    gap: 50px;
+
+    a {
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+.menu-button {
+    position: absolute;
+    z-index: 2;
+    bottom: 90px;
+    left: 290px;
+    width: 250px;
+    height: 60px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.menu-container {
+    background-color: black;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 50px;
+}
+
+.menu-nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+
+    button {
+        width: 150px;
+        height: 60px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+.order-button {
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.slogan {
+    position: absolute;
+    z-index: 2;
+    font-size: 60px;
+    text-align: center;
+    left: 40px;
+    top: 150px;
+
+    span {
+        color: #d6a227;
+        text-decoration: underline;
+    }
+}
+
+.title {
+    font-size: 33px;
+    cursor: pointer;
+    color: #d6a227;
+
+    span {
+        color: rgb(255, 49, 49);
+        text-decoration: underline;
+    }
+}

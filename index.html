@@ -1,38 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>It's Too Delicious</title>
 </head>
 <body>
     <header>
-        <h1>It's2Delicious</h1>
-        <nav>
+        <h1 class="title">It'<span>s2</span>Delicious</h1>
+        <nav class="main-nav">
             <a>Menu</a>
             <a>About</a>
-            <button>Place Your Order</button>
+            <button class="order-button">order now</button>
         </nav>
     </header>
     <main>
-        <section>
-            <h2>the best burger is here!</h2>
-            <button>see menu</button>
-            <img src="assets/background-section.avif" alt="background-burger-section">
-            <img src="assets/burger-section.png" alt="ilustractive-burger">
+        <section class="burger-container">
+            <h2 class="slogan">the best burger is here! <br> <span>only here!</span></h2>
+            <button class="menu-button">see menu</button>
+            <img class="background-burger-img" src="assets/background-section.png" alt="background-burger-section">
+            <img class="burger-img" src="assets/burger-section.png" alt="ilustractive-burger">
         </section>
-        <section>
-            <h3>menu</h3>
-            <button>Show All</button>
-            <button>10% discount</button>
-            <button>Total Price</button>
-            <button>Vegan Burgers</button>
-        </section>
-        <aside>
+        <section class="menu-container">
+            <nav class="menu-nav">
+                <h3>menu</h3>
+                <button class="show-all-button">Show All</button>
+                <button class="discount-button">10% discount</button>
+                <button class="total-price-button">Total Price</button>
+                <button class="vegan-button">Vegan Burgers</button>
+            </nav>
             <ul>
                 <li></li>
             </ul>
-        </aside>
+        </section>
     </main>
 </body>
 </html>
