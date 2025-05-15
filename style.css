@@ -46,11 +46,45 @@ main {
     height: 880px;
 }
 
+li {
+
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #6b2906;
+    background-color: #b44307;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+
+    img {
+        width: 270px;
+        padding: 5px;
+        border-radius: 15px;
+        border: 1px solid #6b2906;
+    }
+}
+
+li:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+li:active {
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
 ul {
     list-style: none;
     display: grid;
     justify-content: center;
-    grid-template-columns: 2;
+    grid-template-columns: 270px 270px 270px;
+    margin-top: 30px;
+    gap: 20px;
 }
 
 .burger-img {
@@ -67,7 +101,7 @@ ul {
 }
 
 .burger-container {
-    width: 50%;
+    width: 45%;
     height: 100%;
 }
 
@@ -99,7 +133,7 @@ ul {
 
 .menu-container {
     background-color: black;
-    width: 50%;
+    width: 55%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -127,6 +161,10 @@ ul {
     height: 40px;
     font-size: 20px;
     font-weight: bold;
+}
+
+.price-burger {
+    color: #36d85e;
 }
 
 .slogan {
