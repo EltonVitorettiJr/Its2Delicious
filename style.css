@@ -15,6 +15,18 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+body::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(assets/background-img.png);
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.15;
+}
+
 button {
     background-color: #b44307;
     color: #ebd8ad;
@@ -61,7 +73,7 @@ li {
     font-size: 20px;
 
     img {
-        width: 270px;
+        width: 16rem;
         padding: 5px;
         border-radius: 15px;
         border: 1px solid #6b2906;
@@ -82,27 +94,23 @@ ul {
     list-style: none;
     display: grid;
     justify-content: center;
-    grid-template-columns: 270px 270px 270px;
+    grid-template-columns: 16rem 16rem 16rem;
     margin-top: 30px;
     gap: 20px;
 }
 
 .burger-img {
-    position: absolute;
-    bottom: 170px;
-    left: 170px;
-}
-
-.background-burger-img {
-    opacity: 0.15;
-    position: absolute;
-    height: 850px;
-    bottom: 10px;
+    width: 33rem;
+    filter: drop-shadow(0 0 0.75rem #d6a227);
 }
 
 .burger-container {
-    width: 45%;
+    width: 50%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
 }
 
 .main-nav {
@@ -120,10 +128,6 @@ ul {
 }
 
 .menu-button {
-    position: absolute;
-    z-index: 2;
-    bottom: 90px;
-    left: 290px;
     width: 250px;
     height: 60px;
     font-size: 40px;
@@ -132,13 +136,10 @@ ul {
 }
 
 .menu-container {
-    background-color: black;
-    width: 55%;
+    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    position: relative;
-    bottom: 50px;
 }
 
 .menu-nav {
@@ -168,12 +169,8 @@ ul {
 }
 
 .slogan {
-    position: absolute;
-    z-index: 2;
-    font-size: 60px;
+    font-size: 3.5em;
     text-align: center;
-    left: 40px;
-    top: 150px;
 
     span {
         color: #d6a227;
@@ -189,5 +186,19 @@ ul {
     span {
         color: rgb(255, 49, 49);
         text-decoration: underline;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
     }
 }
