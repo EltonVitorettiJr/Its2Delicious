@@ -7,8 +7,8 @@
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: black;
     color: #ebd8ad;
     text-transform: uppercase;
@@ -34,6 +34,7 @@ button {
     border-radius: 5px;
     text-transform: uppercase;
     cursor: pointer;
+    min-width: 115px;
 }
 
 button:hover {
@@ -48,14 +49,15 @@ button:active {
 
 header {
     display: flex;
-    padding: 20px 0 0 60px;
-    width: 800px;
+    padding: 20px 0 0 2%;
+    width:55%;
+    justify-content: center;
 }
 
 main {
     display: flex;
     width: 100%;
-    height: 880px;
+    height: 100%
 }
 
 li {
@@ -72,11 +74,13 @@ li {
     font-weight: 500;
     font-size: 20px;
 
+
     img {
-        width: 16rem;
+        width: 100%;
         padding: 5px;
         border-radius: 15px;
         border: 1px solid #6b2906;
+
     }
 }
 
@@ -94,19 +98,20 @@ ul {
     list-style: none;
     display: grid;
     justify-content: center;
-    grid-template-columns: 16rem 16rem 16rem;
+    grid-template-columns: 30% 30% 30%;
     margin-top: 30px;
     gap: 20px;
 }
 
 .burger-img {
-    width: 33rem;
+    width: 60%;
     filter: drop-shadow(0 0 0.75rem #d6a227);
+    min-width: 290px;
 }
 
 .burger-container {
     width: 50%;
-    height: 100%;
+    height: 88%;
     display: flex;
     flex-direction: column;
     padding: 2rem;
@@ -117,8 +122,9 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 0 0 100px;
+    padding: 0 0 0 5%;
     gap: 50px;
+    width: 100%;
 
     a {
         cursor: pointer;
@@ -137,9 +143,11 @@ ul {
 
 .menu-container {
     width: 50%;
-    height: 100%;
+    height: 88%;
     display: flex;
     flex-direction: column;
+    position: relative;
+    top: -2.5rem;
 }
 
 .menu-nav {
@@ -150,10 +158,11 @@ ul {
     align-items: center;
 
     button {
-        width: 150px;
-        height: 60px;
+        width: 8rem;
+        height: 100%;
         font-size: 20px;
         font-weight: bold;
+        padding: 3px;
     }
 }
 
@@ -189,7 +198,8 @@ ul {
     }
 }
 
-@media screen and (max-width: 1280px) {
+
+@media screen and (max-width: 1400px) {
 
     body {
         display: flex;
@@ -197,8 +207,54 @@ ul {
         align-items: center;
     }
 
+    body::before {
+        height: 1650px;
+    }
+
+    header {
+        padding-left: 0;
+        gap: 30px;
+    }
+
+    li {
+        min-width: 200px;
+
+        img {
+            min-width: 200px;
+        }
+    }
+
     main {
         display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+
+    ul {
+            grid-template-columns: 20% 20% 20%;
+    }
+
+    .burger-container {
+        width: 100%;
+        height: 50%;
+    }
+
+    .burger-img {
+        width: 50%;
+        max-width: 500px;
+    }
+
+    .main-nav {
+        padding: 0%;
+    }
+
+    .menu-container {
+        width: 100%;
+        height: 50%;
+    }
+
+    .menu-nav {
+        width: 100%;
+        margin-top: 2rem;
     }
 }

@@ -1,8 +1,7 @@
-const showAllButton = document.querySelector(`.show-all-button`)
+const menuButton = document.querySelector(`.menu-button`)
 const discountButton = document.querySelector(`.discount-button`) 
 const totalButton = document.querySelector(`.total-price-button`)
 const veganButton = document.querySelector(`.vegan-button`)
-const menuButton = document.querySelector(`.menu-button`)
 const listMenu = document.querySelector(`ul`)
 
 let discountON = false
@@ -75,7 +74,6 @@ function veganFilter() {
     showAll(menuOptions.filter(burger => burger.vegan))
 }
 
-showAllButton.addEventListener(`click`, () => showAll(menuOptions))
 discountButton.addEventListener(`click`, discount)
 totalButton.addEventListener(`click`, () => totalPrice())
 veganButton.addEventListener(`click`, veganFilter)
