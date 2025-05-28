@@ -16,7 +16,7 @@ function showAll (listType) {
         list += 
         `<li>
             <img src="${burger.src}">
-            <p class="name-burger">Burger: ${burger.name}</p>
+            <p class="name-burger">${burger.name}</p>
             <p class="price-burger">R$: ${burger.price.toFixed(2)}</p>
         </li>`
         

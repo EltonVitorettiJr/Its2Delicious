@@ -13,15 +13,16 @@ body {
     color: #ebd8ad;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
+    position: relative;
 }
 
 body::before {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     background-image: url(assets/background-img.png);
     content: "";
-    height: 100%;
+    height: 100vh;
     width: 100%;
     z-index: -1;
     opacity: 0.15;
@@ -114,7 +115,7 @@ ul {
     height: 88%;
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    margin: 25px 0 0 0;
     align-items: center;
 }
 
@@ -134,16 +135,17 @@ ul {
 }
 
 .menu-button {
-    width: 250px;
+    width: 23%;
     height: 60px;
     font-size: 40px;
     text-align: center;
     font-weight: bold;
+    min-width: 250px;
 }
 
 .menu-container {
     width: 50%;
-    height: 88%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -156,6 +158,7 @@ ul {
     justify-content: center;
     gap: 30px;
     align-items: center;
+    padding-bottom: 30px;
 
     button {
         width: 8rem;
@@ -207,10 +210,6 @@ ul {
         align-items: center;
     }
 
-    body::before {
-        height: 1650px;
-    }
-
     header {
         padding-left: 0;
         gap: 30px;
@@ -251,10 +250,112 @@ ul {
     .menu-container {
         width: 100%;
         height: 50%;
+        margin-top: 60px;
     }
 
     .menu-nav {
         width: 100%;
-        margin-top: 2rem;
     }
+}
+
+@media screen and (max-width: 1050px) {
+
+    li {
+        min-width: 100px;
+
+        img {
+            min-width: 100px;
+        }
+    }
+
+    ul {
+        grid-template-columns: 25% 25% 25%;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .name-burger {
+        font-size: 15px;
+    }
+
+    .order-button {
+        min-width: 140px;
+    }
+
+    .price-burger {
+        font-size: 15px;
+    }
+
+    .slogan {
+        font-size: 38px;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    ul {
+        grid-template-columns: 37% 37%;
+    }
+
+    .main-nav {
+        gap: 40px;
+    }
+
+    .menu-button {
+        min-width: 170px;
+        height: 40px;
+        font-size: 30px;
+    }
+
+    .menu-nav {
+    gap: 15px;
+
+    button {
+        width: 5rem;
+        font-size: 15px;
+        min-width: 100px;
+    }
+}
+
+    .name-burger {
+        font-size: 20px;
+    }
+
+    .order-button {
+        height: 50px;
+        min-width: 90px;
+    }
+
+    .price-burger {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .name-burger {
+        font-size: 15px;
+    }
+
+    .price-burger {
+        font-size: 15px;
+    }
+
+    .slogan {
+        font-size: 32px;
+    }
+
 }
