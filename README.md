@@ -16,6 +16,7 @@
 
 ## :hamburger: Sobre o Projeto
 
+Esse é um projeto de website frontend para uma hamburgueria! A aplicação conta com responsividade e geração dinâmica do cardápio disponibilizado.
 
 <br>
 
@@ -23,6 +24,7 @@
 
 - [HTML](https://www.w3schools.com/html/)
 - [CSS](https://www.w3schools.com/css/)
+- [JavaScript](https://www.w3schools.com/js/)
 
 # :bug: Problemas
 
