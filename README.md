@@ -5,8 +5,8 @@
 <br>
 
 <p align="center">
-  <a href="#hamburger">Sobre o Projeto</a> | 
-  <a href="#computer-tecnologias">Tecnologias Usadas</a> | 
+  <a href="#hamburger-sobre-o-projeto">Sobre o Projeto</a> | 
+  <a href="#computer-tecnologias-usadas">Tecnologias Usadas</a> | 
   <a href="#bug-problemas">Problemas</a>
 </p>
 
